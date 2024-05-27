@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color: #1a162e;
+    --icon-color: brightness(0) saturate(100%) invert(8%) sepia(6%) saturate(7224%) hue-rotate(213deg) brightness(100%) contrast(95%);
+}
+
 html {
     font-size: 62.5%;
 }
@@ -9,4 +14,26 @@ html {
 body {
     font-size:  1.6rem;
     font-family: 'Quicksand', sans-serif;
+    color: var(--text-color);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+}
+
+button, input, textarea, select {
+    font-family: inherit;
+    color: inherit;
+}
+
+.icon-color {
+    filter: var(--icon-color)
 }
