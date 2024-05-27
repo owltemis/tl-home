@@ -25,14 +25,41 @@
 
 </head>
 <body>
+    <!-- header -->
     <header id="header" class="header"></header>
     <script>
         load("#header", "./templates/header.html");
     </script>
 
-    <div class="container">        
-        <h1>Home Page</h1>
+    <div class="container">
+        <!-- slide-show -->
+        <div class="slide-show">
+            <div class="slide-show__inner">
+                <div class="slide-show__item">
+                    <img src="./assets/img/slide-show-items/slide-show-item1.png" alt="slide-show-item1.png" class="slide-show__img">
+                </div>
+                <div class="slide-show__item">
+                    <img src="./assets/img/slide-show-items/slide-show-item2.png" alt="slide-show-item2.png" class="slide-show__img">
+                </div>
+                <div class="slide-show__item">
+                    <img src="./assets/img/slide-show-items/slide-show-item3.png" alt="slide-show-item3.png" class="slide-show__img">
+                </div>
+                <div class="slide-show__item">
+                    <img src="./assets/img/slide-show-items/slide-show-item4.png" alt="slide-show-item4.png" class="slide-show__img">
+                </div>
+                <div class="slide-show__item">
+                    <img src="./assets/img/slide-show-items/slide-show-item5.png" alt="slide-show-item5.png" class="slide-show__img">
+                </div>
+            </div>
 
+            <div class="slide-show__page">
+                <span class="slide-show__page-number">1</span>
+                <span class="slide-show__slider"></span>
+                <span class="slide-show__page-number">5</span>
+            </div>
+        </div>
+
+        <!-- footer -->
         <footer id="footer"></footer>
         <script>
             load("#footer", "./templates/footer.html");
